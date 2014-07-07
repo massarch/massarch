@@ -1,0 +1,215 @@
+/**
+ * Table of Contents for FoundationPress:
+ *
+ * 1.0 - Custom settings
+ * 2.0 - Typography
+ * 3.0 - Header, sidebar and footer
+ * 4.0 - Content
+ *	4.1 - Pages
+ *	4.2 - Posts
+ *	4.3	- Widgets
+ *	4.4 - Comments
+  *	4.5 - Lists
+  * 4.6 - Forms
+ * 5.0 - Plugins
+
+ * ----------------------------------------------------------------------------
+ */
+
+/**
+ * 1.0 Custom settings
+ * ----------------------------------------------------------------------------
+ */
+
+// Add some whitespace between top bar and content
+.top-bar-container, .tab-bar {
+	height: rem-calc(64);
+}
+.top-bar-container {
+	margin-left:rem-calc(48);
+	position:relative;
+	z-index:2;
+}
+.top-bar {
+	margin:8rem 0 0 5px !important;
+}
+
+/**
+ * 2.0 Typography
+ * ----------------------------------------------------------------------------
+ */
+
+// Insert styles here
+
+
+/**
+ * 3.0 Header, sidebar and footer
+ * ----------------------------------------------------------------------------
+ */
+
+// Insert styles here
+
+.logo{
+	background: $logoSVG;
+	height:55px;
+	width:284px;
+	margin-top:5px;
+}
+.push {
+	width:100%;
+	height: rem-calc(108);
+	max-width:62.5rem;
+	background:rgba(255,255,255,.9);
+	margin:0 auto -8rem auto;
+	position:relative;
+	top:-8rem;
+	z-index:0;
+}
+.tab-bar {
+	z-index:1;
+}
+
+.tab-bar .menu-icon span {
+	top:rem-calc(64/2.75);
+}
+.title-area, .name, 
+.top-bar-section>ul>.divider, 
+.top-bar-section>ul>[role="separator"], 
+li .menu-item, .left-small,
+.top-bar-section li.active:not(.has-form) a:not(.button) {
+	height:rem-calc(64);
+}
+.top-bar-section li:not(.has-form) a:not(.button), .top-bar-section li.active:not(.has-form) a:not(.button) {
+	font-family: $body-font-family;
+	font-weight: 300;
+	text-transform:uppercase;
+	line-height:rem-calc(64);
+	transition: background 190ms linear,color 190ms linear;
+}
+.top-bar-section .has-dropdown > a:after {
+	top:32px;
+	border-color:rgba(0,0,0,.4)transparent transparent transparent;
+}
+.top-bar-section .has-dropdown .dropdown li.has-dropdown > a:after {
+	line-height:2.4;
+}
+.white {
+	background-color: rgba(255, 255, 255,.9);
+	padding-top:rem-calc(48);
+	position:relative;
+	z-index:0;
+}
+/**
+ * 4.0 Content
+ * ----------------------------------------------------------------------------
+ */
+
+
+	/**
+	 * 4.1 Pages
+	 * ------------------------------------
+	 */
+
+	 // Hero
+
+	#homepage-hero {
+		background: url("http://foundation.zurb.com/assets/img/marquee-stars.svg") repeat scroll 0 0 #074E68;
+		padding: rem-calc(20) 0;
+		margin: - rem-calc(32) 0 rem-calc(32);
+		position: relative;
+		text-align: left;
+		height: auto;
+
+			h1 a, h4 { color: #fff; }
+
+			.floatingyeti img {
+				max-width: 30%;
+				position: absolute;
+				right: rem-calc(100);
+			}
+
+			.download { margin-top: rem-calc(20); }
+		}
+	
+	//  Front Page
+
+	
+
+	/**
+	 * 4.2 Posts
+	 * ------------------------------------
+	 */
+
+	// Insert styles here
+
+
+	/**
+	 * 4.3 Widgets
+	 * ------------------------------------
+	 */
+
+	// Insert styles here
+
+
+	/**
+	 * 4.4 Comments
+	 * ------------------------------------
+	 */
+
+	// Insert styles here
+
+
+	/**
+	 * 4.5 Lists
+	 * ------------------------------------
+	 */
+
+	// Insert styles here
+
+
+	/**
+	 * 4.6 Forms
+	 * ------------------------------------
+	 */
+
+	// Insert styles here
+
+
+/**
+ * 5.0 Plugins
+ * ----------------------------------------------------------------------------
+ */
+
+// Insert styles here
+
+/**
+ * 6.0 Media Queries
+ * ----------------------------------------------------------------------------
+ */
+
+@media all and (max-width: 640px){
+
+	.top-bar-container, .tab-bar {
+		height: rem-calc(40);
+	}
+	.logo {
+		max-width:154px;
+		height:30px;
+		margin-top: 5px;
+	}
+
+	.title-area, .name, 
+	.top-bar-section>ul>.divider, 
+	.top-bar-section>ul>[role="separator"], 
+	li .menu-item, .left-small,
+	.top-bar-section li.active:not(.has-form) a:not(.button) {
+		height:rem-calc(40);
+	}
+
+	.tab-bar .menu-icon span {
+		top:rem-calc(40/2.75);
+	}
+	.top-bar-section li:not(.has-form) a:not(.button), .top-bar-section li.active:not(.has-form) a:not(.button) {
+		height:rem-calc(30);
+	}
+}
